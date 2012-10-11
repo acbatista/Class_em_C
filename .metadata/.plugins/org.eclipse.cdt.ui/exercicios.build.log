@@ -1,0 +1,24 @@
+17:13:40 **** Incremental Build of configuration Debug for project exercicios ****
+make all 
+Building file: ../src/exe01.c
+Invoking: GCC C Compiler
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -MMD -MP -MF"src/exe01.d" -MT"src/exe01.d" -o "src/exe01.o" "../src/exe01.c"
+../src/exe01.c:2:19: warning: cocoa.h: No such file or directory
+../src/exe01.c:4: warning: return type defaults to 'int'
+../src/exe01.c: In function 'main':
+../src/exe01.c:37: warning: implicit declaration of function 'getch'
+../src/exe01.c:42: warning: control reaches end of non-void function
+Finished building: ../src/exe01.c
+ 
+Building target: exercicios
+Invoking: MacOS X C Linker
+gcc  -o "exercicios"  ./src/exe01.o   
+Undefined symbols for architecture x86_64:
+  "_getch", referenced from:
+      _main in exe01.o
+ld: symbol(s) not found for architecture x86_64
+collect2: ld returned 1 exit status
+make: *** [exercicios] Error 1
+
+17:13:42 Build Finished (took 1s.320ms)
+
